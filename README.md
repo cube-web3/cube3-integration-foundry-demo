@@ -1,66 +1,38 @@
-## Foundry
+# CUBE3 Demo Integration ERC721
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project demonstrates the usage of the CUBE3 integration contracts, which can be found [here](https://github.com/cube-web3/cube3-integration). The cube3-integration repo contains detailed information about the contracts and their usage, as well as an overview of the CUBE3 Protocol.
 
-Foundry consists of:
+The following files showcase usage of the integration contracts:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- `src/DemoIntegrationERC721.sol`
+- `src/DemoIntegrationERC721Upgradeable.sol`
 
-## Documentation
+## Installation
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
+Clone the repository:
 
 ```shell
-$ forge build
+git clone git@github.com:cube-web3/cube3-integration-foundry-demo.git && cd cube3-integration-foundry-demo
 ```
 
-### Test
+Install the dependencies:
 
 ```shell
-$ forge test
+forge install
 ```
 
-### Format
+## Testing
 
-```shell
-$ forge fmt
+Run the tests:
+
+```
+forge test
 ```
 
-### Gas Snapshots
+# Licensing
 
-```shell
-$ forge snapshot
-```
+The primary license for the smart contracts is the MIT License, see [LICENSE](./LICENSE).
 
-### Anvil
+# Disclaimer
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+These smart contracts are being provided as is. No guarantee, representation or warranty is being made, express or implied, as to the safety or correctness of the smart contracts.
