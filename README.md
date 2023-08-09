@@ -26,7 +26,7 @@ forge install && forge update
 Run the tests:
 
 ```
-forge test
+forge test -vvvv
 ```
 
 # Licensing
