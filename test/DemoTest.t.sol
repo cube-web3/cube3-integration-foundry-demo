@@ -6,7 +6,8 @@ import {DemoIntegrationERC721} from "../src/DemoIntegrationERC721.sol";
 import {DemoIntegrationERC721UpgradeableNoModifier,DemoIntegrationERC721UpgradeableWithModifier} from "../src/DemoIntegrationERC721Upgradeable.sol";
 import {Cube3ProtocolTestUtils} from "cube3/test/foundry/utils/deploy.sol";
 
-
+// inheirt from the Cube3ProtocolTestUtils contract to gain access to the mock CUBE3 protocol contracts
+// Cube3ProtocolTestUtils inherits from `forge-std/Test.sol`
 contract DemoTest is Cube3ProtocolTestUtils {
 
     DemoIntegrationERC721 internal demo;
