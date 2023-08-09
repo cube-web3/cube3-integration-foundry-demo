@@ -18,7 +18,7 @@ contract DemoTest is Cube3ProtocolTestUtils {
     address internal integrationSecurityAdmin = makeAddr("integrationSecurityAdmin");
 
     function setUp() public {
-        // You MUST deploy the mock CUBE3 protocol contracts before running the tests
+        // mock CUBE3 protocol contracts MUST be deployed before running the tests
         _deployMockCube3Protocol();
 
         vm.startPrank(integrationSecurityAdmin);
