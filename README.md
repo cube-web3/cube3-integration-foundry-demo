@@ -18,7 +18,7 @@ git clone git@github.com:cube-web3/cube3-integration-foundry-demo.git && cd cube
 Install the dependencies:
 
 ```shell
-forge install
+forge install && forge update
 ```
 
 ## Testing
