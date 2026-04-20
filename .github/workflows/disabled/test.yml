@@ -1,3 +1,5 @@
+# DISABLED by OPS-190 on 2026-04-20 — workflow had zero runs in GitHub history when audited. Moved to .github/workflows/disabled/ so GitHub Actions no longer parses it (suppresses deprecated-action warnings and reduces noise).
+# To restore: move this file back to .github/workflows/ and update pinned action versions to current standards (see cube-web3/shared-workflows).
 name: test
 
 on: workflow_dispatch
